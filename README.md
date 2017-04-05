@@ -1,5 +1,6 @@
 # gmail_client
 [![Build Status](https://travis-ci.org/CanopyIQ/gmail_client.svg?branch=master)](https://travis-ci.org/CanopyIQ/gmail_client)
+[![PyPI](https://img.shields.io/pypi/v/swagger-gmail-client.svg)](https://pypi.python.org/pypi/swagger-gmail-client)
 
 Access Gmail mailboxes including sending user email.
 
