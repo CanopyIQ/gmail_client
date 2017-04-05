@@ -15,7 +15,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "swagger-gmail-client"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -29,10 +29,23 @@ setup(
     name=NAME,
     version=VERSION,
     description="A Swagger generated client for the Gmail v1 API",
+    author="Samiur Rahman",
     author_email="samiur@canopyiq.com",
     url="https://github.com/CanopyIQ/gmail_client",
     keywords=["Swagger", "Gmail"],
     install_requires=REQUIRES,
+    classifiers=(
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Natural Language :: English',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5'
+    ),
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
