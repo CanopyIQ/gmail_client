@@ -18,13 +18,13 @@ Python 2.7 and 3.4+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/CanopyIQ/gmail_client.git
 ```
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
 ```python
-import gmail_client 
+import gmail_client
 ```
 
 ### Setuptools
@@ -80,68 +80,68 @@ All URIs are relative to *https://www.googleapis.com/gmail/v1/users*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*UsersApi* | [**gmail_users_drafts_create**](docs/UsersApi.md#gmail_users_drafts_create) | **POST** /{userId}/drafts | 
-*UsersApi* | [**gmail_users_drafts_delete**](docs/UsersApi.md#gmail_users_drafts_delete) | **DELETE** /{userId}/drafts/{id} | 
-*UsersApi* | [**gmail_users_drafts_get**](docs/UsersApi.md#gmail_users_drafts_get) | **GET** /{userId}/drafts/{id} | 
-*UsersApi* | [**gmail_users_drafts_list**](docs/UsersApi.md#gmail_users_drafts_list) | **GET** /{userId}/drafts | 
-*UsersApi* | [**gmail_users_drafts_send**](docs/UsersApi.md#gmail_users_drafts_send) | **POST** /{userId}/drafts/send | 
-*UsersApi* | [**gmail_users_drafts_update**](docs/UsersApi.md#gmail_users_drafts_update) | **PUT** /{userId}/drafts/{id} | 
-*UsersApi* | [**gmail_users_get_profile**](docs/UsersApi.md#gmail_users_get_profile) | **GET** /{userId}/profile | 
-*UsersApi* | [**gmail_users_history_list**](docs/UsersApi.md#gmail_users_history_list) | **GET** /{userId}/history | 
-*UsersApi* | [**gmail_users_labels_create**](docs/UsersApi.md#gmail_users_labels_create) | **POST** /{userId}/labels | 
-*UsersApi* | [**gmail_users_labels_delete**](docs/UsersApi.md#gmail_users_labels_delete) | **DELETE** /{userId}/labels/{id} | 
-*UsersApi* | [**gmail_users_labels_get**](docs/UsersApi.md#gmail_users_labels_get) | **GET** /{userId}/labels/{id} | 
-*UsersApi* | [**gmail_users_labels_list**](docs/UsersApi.md#gmail_users_labels_list) | **GET** /{userId}/labels | 
-*UsersApi* | [**gmail_users_labels_patch**](docs/UsersApi.md#gmail_users_labels_patch) | **PATCH** /{userId}/labels/{id} | 
-*UsersApi* | [**gmail_users_labels_update**](docs/UsersApi.md#gmail_users_labels_update) | **PUT** /{userId}/labels/{id} | 
-*UsersApi* | [**gmail_users_messages_attachments_get**](docs/UsersApi.md#gmail_users_messages_attachments_get) | **GET** /{userId}/messages/{messageId}/attachments/{id} | 
-*UsersApi* | [**gmail_users_messages_batch_delete**](docs/UsersApi.md#gmail_users_messages_batch_delete) | **POST** /{userId}/messages/batchDelete | 
-*UsersApi* | [**gmail_users_messages_batch_modify**](docs/UsersApi.md#gmail_users_messages_batch_modify) | **POST** /{userId}/messages/batchModify | 
-*UsersApi* | [**gmail_users_messages_delete**](docs/UsersApi.md#gmail_users_messages_delete) | **DELETE** /{userId}/messages/{id} | 
-*UsersApi* | [**gmail_users_messages_get**](docs/UsersApi.md#gmail_users_messages_get) | **GET** /{userId}/messages/{id} | 
-*UsersApi* | [**gmail_users_messages_import**](docs/UsersApi.md#gmail_users_messages_import) | **POST** /{userId}/messages/import | 
-*UsersApi* | [**gmail_users_messages_insert**](docs/UsersApi.md#gmail_users_messages_insert) | **POST** /{userId}/messages | 
-*UsersApi* | [**gmail_users_messages_list**](docs/UsersApi.md#gmail_users_messages_list) | **GET** /{userId}/messages | 
-*UsersApi* | [**gmail_users_messages_modify**](docs/UsersApi.md#gmail_users_messages_modify) | **POST** /{userId}/messages/{id}/modify | 
-*UsersApi* | [**gmail_users_messages_send**](docs/UsersApi.md#gmail_users_messages_send) | **POST** /{userId}/messages/send | 
-*UsersApi* | [**gmail_users_messages_trash**](docs/UsersApi.md#gmail_users_messages_trash) | **POST** /{userId}/messages/{id}/trash | 
-*UsersApi* | [**gmail_users_messages_untrash**](docs/UsersApi.md#gmail_users_messages_untrash) | **POST** /{userId}/messages/{id}/untrash | 
-*UsersApi* | [**gmail_users_settings_filters_create**](docs/UsersApi.md#gmail_users_settings_filters_create) | **POST** /{userId}/settings/filters | 
-*UsersApi* | [**gmail_users_settings_filters_delete**](docs/UsersApi.md#gmail_users_settings_filters_delete) | **DELETE** /{userId}/settings/filters/{id} | 
-*UsersApi* | [**gmail_users_settings_filters_get**](docs/UsersApi.md#gmail_users_settings_filters_get) | **GET** /{userId}/settings/filters/{id} | 
-*UsersApi* | [**gmail_users_settings_filters_list**](docs/UsersApi.md#gmail_users_settings_filters_list) | **GET** /{userId}/settings/filters | 
-*UsersApi* | [**gmail_users_settings_forwarding_addresses_create**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_create) | **POST** /{userId}/settings/forwardingAddresses | 
-*UsersApi* | [**gmail_users_settings_forwarding_addresses_delete**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_delete) | **DELETE** /{userId}/settings/forwardingAddresses/{forwardingEmail} | 
-*UsersApi* | [**gmail_users_settings_forwarding_addresses_get**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_get) | **GET** /{userId}/settings/forwardingAddresses/{forwardingEmail} | 
-*UsersApi* | [**gmail_users_settings_forwarding_addresses_list**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_list) | **GET** /{userId}/settings/forwardingAddresses | 
-*UsersApi* | [**gmail_users_settings_get_auto_forwarding**](docs/UsersApi.md#gmail_users_settings_get_auto_forwarding) | **GET** /{userId}/settings/autoForwarding | 
-*UsersApi* | [**gmail_users_settings_get_imap**](docs/UsersApi.md#gmail_users_settings_get_imap) | **GET** /{userId}/settings/imap | 
-*UsersApi* | [**gmail_users_settings_get_pop**](docs/UsersApi.md#gmail_users_settings_get_pop) | **GET** /{userId}/settings/pop | 
-*UsersApi* | [**gmail_users_settings_get_vacation**](docs/UsersApi.md#gmail_users_settings_get_vacation) | **GET** /{userId}/settings/vacation | 
-*UsersApi* | [**gmail_users_settings_send_as_create**](docs/UsersApi.md#gmail_users_settings_send_as_create) | **POST** /{userId}/settings/sendAs | 
-*UsersApi* | [**gmail_users_settings_send_as_delete**](docs/UsersApi.md#gmail_users_settings_send_as_delete) | **DELETE** /{userId}/settings/sendAs/{sendAsEmail} | 
-*UsersApi* | [**gmail_users_settings_send_as_get**](docs/UsersApi.md#gmail_users_settings_send_as_get) | **GET** /{userId}/settings/sendAs/{sendAsEmail} | 
-*UsersApi* | [**gmail_users_settings_send_as_list**](docs/UsersApi.md#gmail_users_settings_send_as_list) | **GET** /{userId}/settings/sendAs | 
-*UsersApi* | [**gmail_users_settings_send_as_patch**](docs/UsersApi.md#gmail_users_settings_send_as_patch) | **PATCH** /{userId}/settings/sendAs/{sendAsEmail} | 
-*UsersApi* | [**gmail_users_settings_send_as_smime_info_delete**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_delete) | **DELETE** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id} | 
-*UsersApi* | [**gmail_users_settings_send_as_smime_info_get**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_get) | **GET** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id} | 
-*UsersApi* | [**gmail_users_settings_send_as_smime_info_insert**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_insert) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo | 
-*UsersApi* | [**gmail_users_settings_send_as_smime_info_list**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_list) | **GET** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo | 
-*UsersApi* | [**gmail_users_settings_send_as_smime_info_set_default**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_set_default) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}/setDefault | 
-*UsersApi* | [**gmail_users_settings_send_as_update**](docs/UsersApi.md#gmail_users_settings_send_as_update) | **PUT** /{userId}/settings/sendAs/{sendAsEmail} | 
-*UsersApi* | [**gmail_users_settings_send_as_verify**](docs/UsersApi.md#gmail_users_settings_send_as_verify) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/verify | 
-*UsersApi* | [**gmail_users_settings_update_auto_forwarding**](docs/UsersApi.md#gmail_users_settings_update_auto_forwarding) | **PUT** /{userId}/settings/autoForwarding | 
-*UsersApi* | [**gmail_users_settings_update_imap**](docs/UsersApi.md#gmail_users_settings_update_imap) | **PUT** /{userId}/settings/imap | 
-*UsersApi* | [**gmail_users_settings_update_pop**](docs/UsersApi.md#gmail_users_settings_update_pop) | **PUT** /{userId}/settings/pop | 
-*UsersApi* | [**gmail_users_settings_update_vacation**](docs/UsersApi.md#gmail_users_settings_update_vacation) | **PUT** /{userId}/settings/vacation | 
-*UsersApi* | [**gmail_users_stop**](docs/UsersApi.md#gmail_users_stop) | **POST** /{userId}/stop | 
-*UsersApi* | [**gmail_users_threads_delete**](docs/UsersApi.md#gmail_users_threads_delete) | **DELETE** /{userId}/threads/{id} | 
-*UsersApi* | [**gmail_users_threads_get**](docs/UsersApi.md#gmail_users_threads_get) | **GET** /{userId}/threads/{id} | 
-*UsersApi* | [**gmail_users_threads_list**](docs/UsersApi.md#gmail_users_threads_list) | **GET** /{userId}/threads | 
-*UsersApi* | [**gmail_users_threads_modify**](docs/UsersApi.md#gmail_users_threads_modify) | **POST** /{userId}/threads/{id}/modify | 
-*UsersApi* | [**gmail_users_threads_trash**](docs/UsersApi.md#gmail_users_threads_trash) | **POST** /{userId}/threads/{id}/trash | 
-*UsersApi* | [**gmail_users_threads_untrash**](docs/UsersApi.md#gmail_users_threads_untrash) | **POST** /{userId}/threads/{id}/untrash | 
-*UsersApi* | [**gmail_users_watch**](docs/UsersApi.md#gmail_users_watch) | **POST** /{userId}/watch | 
+*UsersApi* | [**gmail_users_drafts_create**](docs/UsersApi.md#gmail_users_drafts_create) | **POST** /{userId}/drafts |
+*UsersApi* | [**gmail_users_drafts_delete**](docs/UsersApi.md#gmail_users_drafts_delete) | **DELETE** /{userId}/drafts/{id} |
+*UsersApi* | [**gmail_users_drafts_get**](docs/UsersApi.md#gmail_users_drafts_get) | **GET** /{userId}/drafts/{id} |
+*UsersApi* | [**gmail_users_drafts_list**](docs/UsersApi.md#gmail_users_drafts_list) | **GET** /{userId}/drafts |
+*UsersApi* | [**gmail_users_drafts_send**](docs/UsersApi.md#gmail_users_drafts_send) | **POST** /{userId}/drafts/send |
+*UsersApi* | [**gmail_users_drafts_update**](docs/UsersApi.md#gmail_users_drafts_update) | **PUT** /{userId}/drafts/{id} |
+*UsersApi* | [**gmail_users_get_profile**](docs/UsersApi.md#gmail_users_get_profile) | **GET** /{userId}/profile |
+*UsersApi* | [**gmail_users_history_list**](docs/UsersApi.md#gmail_users_history_list) | **GET** /{userId}/history |
+*UsersApi* | [**gmail_users_labels_create**](docs/UsersApi.md#gmail_users_labels_create) | **POST** /{userId}/labels |
+*UsersApi* | [**gmail_users_labels_delete**](docs/UsersApi.md#gmail_users_labels_delete) | **DELETE** /{userId}/labels/{id} |
+*UsersApi* | [**gmail_users_labels_get**](docs/UsersApi.md#gmail_users_labels_get) | **GET** /{userId}/labels/{id} |
+*UsersApi* | [**gmail_users_labels_list**](docs/UsersApi.md#gmail_users_labels_list) | **GET** /{userId}/labels |
+*UsersApi* | [**gmail_users_labels_patch**](docs/UsersApi.md#gmail_users_labels_patch) | **PATCH** /{userId}/labels/{id} |
+*UsersApi* | [**gmail_users_labels_update**](docs/UsersApi.md#gmail_users_labels_update) | **PUT** /{userId}/labels/{id} |
+*UsersApi* | [**gmail_users_messages_attachments_get**](docs/UsersApi.md#gmail_users_messages_attachments_get) | **GET** /{userId}/messages/{messageId}/attachments/{id} |
+*UsersApi* | [**gmail_users_messages_batch_delete**](docs/UsersApi.md#gmail_users_messages_batch_delete) | **POST** /{userId}/messages/batchDelete |
+*UsersApi* | [**gmail_users_messages_batch_modify**](docs/UsersApi.md#gmail_users_messages_batch_modify) | **POST** /{userId}/messages/batchModify |
+*UsersApi* | [**gmail_users_messages_delete**](docs/UsersApi.md#gmail_users_messages_delete) | **DELETE** /{userId}/messages/{id} |
+*UsersApi* | [**gmail_users_messages_get**](docs/UsersApi.md#gmail_users_messages_get) | **GET** /{userId}/messages/{id} |
+*UsersApi* | [**gmail_users_messages_import**](docs/UsersApi.md#gmail_users_messages_import) | **POST** /{userId}/messages/import |
+*UsersApi* | [**gmail_users_messages_insert**](docs/UsersApi.md#gmail_users_messages_insert) | **POST** /{userId}/messages |
+*UsersApi* | [**gmail_users_messages_list**](docs/UsersApi.md#gmail_users_messages_list) | **GET** /{userId}/messages |
+*UsersApi* | [**gmail_users_messages_modify**](docs/UsersApi.md#gmail_users_messages_modify) | **POST** /{userId}/messages/{id}/modify |
+*UsersApi* | [**gmail_users_messages_send**](docs/UsersApi.md#gmail_users_messages_send) | **POST** /{userId}/messages/send |
+*UsersApi* | [**gmail_users_messages_trash**](docs/UsersApi.md#gmail_users_messages_trash) | **POST** /{userId}/messages/{id}/trash |
+*UsersApi* | [**gmail_users_messages_untrash**](docs/UsersApi.md#gmail_users_messages_untrash) | **POST** /{userId}/messages/{id}/untrash |
+*UsersApi* | [**gmail_users_settings_filters_create**](docs/UsersApi.md#gmail_users_settings_filters_create) | **POST** /{userId}/settings/filters |
+*UsersApi* | [**gmail_users_settings_filters_delete**](docs/UsersApi.md#gmail_users_settings_filters_delete) | **DELETE** /{userId}/settings/filters/{id} |
+*UsersApi* | [**gmail_users_settings_filters_get**](docs/UsersApi.md#gmail_users_settings_filters_get) | **GET** /{userId}/settings/filters/{id} |
+*UsersApi* | [**gmail_users_settings_filters_list**](docs/UsersApi.md#gmail_users_settings_filters_list) | **GET** /{userId}/settings/filters |
+*UsersApi* | [**gmail_users_settings_forwarding_addresses_create**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_create) | **POST** /{userId}/settings/forwardingAddresses |
+*UsersApi* | [**gmail_users_settings_forwarding_addresses_delete**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_delete) | **DELETE** /{userId}/settings/forwardingAddresses/{forwardingEmail} |
+*UsersApi* | [**gmail_users_settings_forwarding_addresses_get**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_get) | **GET** /{userId}/settings/forwardingAddresses/{forwardingEmail} |
+*UsersApi* | [**gmail_users_settings_forwarding_addresses_list**](docs/UsersApi.md#gmail_users_settings_forwarding_addresses_list) | **GET** /{userId}/settings/forwardingAddresses |
+*UsersApi* | [**gmail_users_settings_get_auto_forwarding**](docs/UsersApi.md#gmail_users_settings_get_auto_forwarding) | **GET** /{userId}/settings/autoForwarding |
+*UsersApi* | [**gmail_users_settings_get_imap**](docs/UsersApi.md#gmail_users_settings_get_imap) | **GET** /{userId}/settings/imap |
+*UsersApi* | [**gmail_users_settings_get_pop**](docs/UsersApi.md#gmail_users_settings_get_pop) | **GET** /{userId}/settings/pop |
+*UsersApi* | [**gmail_users_settings_get_vacation**](docs/UsersApi.md#gmail_users_settings_get_vacation) | **GET** /{userId}/settings/vacation |
+*UsersApi* | [**gmail_users_settings_send_as_create**](docs/UsersApi.md#gmail_users_settings_send_as_create) | **POST** /{userId}/settings/sendAs |
+*UsersApi* | [**gmail_users_settings_send_as_delete**](docs/UsersApi.md#gmail_users_settings_send_as_delete) | **DELETE** /{userId}/settings/sendAs/{sendAsEmail} |
+*UsersApi* | [**gmail_users_settings_send_as_get**](docs/UsersApi.md#gmail_users_settings_send_as_get) | **GET** /{userId}/settings/sendAs/{sendAsEmail} |
+*UsersApi* | [**gmail_users_settings_send_as_list**](docs/UsersApi.md#gmail_users_settings_send_as_list) | **GET** /{userId}/settings/sendAs |
+*UsersApi* | [**gmail_users_settings_send_as_patch**](docs/UsersApi.md#gmail_users_settings_send_as_patch) | **PATCH** /{userId}/settings/sendAs/{sendAsEmail} |
+*UsersApi* | [**gmail_users_settings_send_as_smime_info_delete**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_delete) | **DELETE** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id} |
+*UsersApi* | [**gmail_users_settings_send_as_smime_info_get**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_get) | **GET** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id} |
+*UsersApi* | [**gmail_users_settings_send_as_smime_info_insert**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_insert) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo |
+*UsersApi* | [**gmail_users_settings_send_as_smime_info_list**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_list) | **GET** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo |
+*UsersApi* | [**gmail_users_settings_send_as_smime_info_set_default**](docs/UsersApi.md#gmail_users_settings_send_as_smime_info_set_default) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}/setDefault |
+*UsersApi* | [**gmail_users_settings_send_as_update**](docs/UsersApi.md#gmail_users_settings_send_as_update) | **PUT** /{userId}/settings/sendAs/{sendAsEmail} |
+*UsersApi* | [**gmail_users_settings_send_as_verify**](docs/UsersApi.md#gmail_users_settings_send_as_verify) | **POST** /{userId}/settings/sendAs/{sendAsEmail}/verify |
+*UsersApi* | [**gmail_users_settings_update_auto_forwarding**](docs/UsersApi.md#gmail_users_settings_update_auto_forwarding) | **PUT** /{userId}/settings/autoForwarding |
+*UsersApi* | [**gmail_users_settings_update_imap**](docs/UsersApi.md#gmail_users_settings_update_imap) | **PUT** /{userId}/settings/imap |
+*UsersApi* | [**gmail_users_settings_update_pop**](docs/UsersApi.md#gmail_users_settings_update_pop) | **PUT** /{userId}/settings/pop |
+*UsersApi* | [**gmail_users_settings_update_vacation**](docs/UsersApi.md#gmail_users_settings_update_vacation) | **PUT** /{userId}/settings/vacation |
+*UsersApi* | [**gmail_users_stop**](docs/UsersApi.md#gmail_users_stop) | **POST** /{userId}/stop |
+*UsersApi* | [**gmail_users_threads_delete**](docs/UsersApi.md#gmail_users_threads_delete) | **DELETE** /{userId}/threads/{id} |
+*UsersApi* | [**gmail_users_threads_get**](docs/UsersApi.md#gmail_users_threads_get) | **GET** /{userId}/threads/{id} |
+*UsersApi* | [**gmail_users_threads_list**](docs/UsersApi.md#gmail_users_threads_list) | **GET** /{userId}/threads |
+*UsersApi* | [**gmail_users_threads_modify**](docs/UsersApi.md#gmail_users_threads_modify) | **POST** /{userId}/threads/{id}/modify |
+*UsersApi* | [**gmail_users_threads_trash**](docs/UsersApi.md#gmail_users_threads_trash) | **POST** /{userId}/threads/{id}/trash |
+*UsersApi* | [**gmail_users_threads_untrash**](docs/UsersApi.md#gmail_users_threads_untrash) | **POST** /{userId}/threads/{id}/untrash |
+*UsersApi* | [**gmail_users_watch**](docs/UsersApi.md#gmail_users_watch) | **POST** /{userId}/watch |
 
 
 ## Documentation For Models
@@ -195,7 +195,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: implicit
 - **Authorization URL**: https://accounts.google.com/o/oauth2/auth
-- **Scopes**: 
+- **Scopes**:
  - **https://mail.google.com/**: Read, send, delete, and manage your email
  - **https://www.googleapis.com/auth/gmail.compose**: Manage drafts and send emails
  - **https://www.googleapis.com/auth/gmail.insert**: Insert mail into your mailbox
@@ -206,9 +206,3 @@ Class | Method | HTTP request | Description
  - **https://www.googleapis.com/auth/gmail.send**: Send email on your behalf
  - **https://www.googleapis.com/auth/gmail.settings.basic**: Manage your basic mail settings
  - **https://www.googleapis.com/auth/gmail.settings.sharing**: Manage your sensitive mail settings, including who can manage your mail
-
-
-## Author
-
-
-
